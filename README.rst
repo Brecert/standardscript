@@ -1,22 +1,47 @@
-# std-script
+std-script
+==========
 
-Primative Types `/primatives/:type`
-- array
-- boolean
-- rune
-- float<size>
-- fn
-- integer<size>
-- ref `// todo: explain`
-- tuple `// todo: explain`
-- unsigned_integer<size>
-- slice
-- str
-- string
-- never
+Primative Types
+-----------------------------------
+array:
+  An array
+
+bool
+  The boolean type
+
+rune
+  A single ``i32`` that holds a unicode encoded character
+
+float : size where size: 32 || 64
+  The <size>bit floating point type
+
+fn : return_type : ...argument_types
+  A function signature
+
+int : size where size: has_trait(num) && size > 0
+  The <size>bit integer type
+
+ref
+  ``todo: explain``
+
+tuple
+  ``todo: explain``
+  
+uint : size where size: has_trait(num) && size > 0
+  The <size>bit unsigned integer tye
+
+str
+  Unicode string slices
+  ``todo: explain how this works``
+
+string
+  A UTF-8 growable string
+  
+never
+  A type used for exhaustiveness checks that will error at pre-compilation if it's found to be used
 
 Modules `/modules/:type`
-- any
+- any `// todo: explain`
 - array
 - cmp `// todo: explain`
 - env
@@ -31,6 +56,7 @@ Modules `/modules/:type`
 - outside `//todo: explan, rename`
 - panic
 - result
+- slice 
 - task
 - threads
 - time
