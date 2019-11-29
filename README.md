@@ -38,7 +38,32 @@ Modules `/modules/:type`
 - wasm
 
 Keywords `/keywords/:keyword`
-
+- as
+- async `// warn: needed but unknown how implement`
+- break
+- const
+- continue
+- else
+- enum
+- export
+- false
+- fn
+- for
+- if
+- import
+- impl
+- let
+- match
+- ret `// note: maybe return`
+- self
+- static `// todo: explain, node: maybe not like the rust static`
+- struct 
+- super `// todo: explain`
+- trait
+- true
+- type
+- use
+- where `// todo: explain`
 
 
 
