@@ -2,7 +2,7 @@ std-script
 ==========
 
 Primative Types
------------------------------------
+---------------
 array:
   An array
 
