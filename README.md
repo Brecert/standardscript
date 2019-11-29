@@ -20,6 +20,34 @@ Modules `/modules/:type`
 - array
 - cmp `// todo: explain`
 - env
+- error
 - fmt
+- ffi `// remember: wasm, js`
+- io
+- net
+- num
+- mem `// todo: explain`
 - option
+- outside `//todo: explan, rename`
+- panic
+- result
+- task
+- threads
+- time
 - vfs `// todo: explain`
+- wasm
+
+Keywords `/keywords/:keyword`
+
+
+
+
+
+
+
+
+
+
+
+
+
