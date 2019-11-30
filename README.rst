@@ -42,6 +42,7 @@ uint : size where size: has_trait(num) && size > 0
 
 str
   Unicode string slices
+  
   ``todo: explain how this works``
 
 string
@@ -136,10 +137,12 @@ as
   
 async
   ``warn: needed but unknown how to implement``
+  
   Used for asyncronous data
 
 break
   Exit early from a loop
+  
   ``todo: rethink how loops can be conceptulized and if break is needed``
 
 const
@@ -147,6 +150,7 @@ const
 
 continue
   Skip to the next iteration of a loop
+  
   ``todo: rethink how loops can be conceptulized and if continue is needed``
 
 else
@@ -187,6 +191,7 @@ ref
 
 ret
   ``note: mayble return``
+  
   Return a value from a function
   
 self
@@ -194,6 +199,7 @@ self
   
 static
   ``todo: explain``
+  
   ``note: not like the rust static``
 
 struct
@@ -201,7 +207,9 @@ struct
 
 super
   The parent of the current module
+  
   ``note: this differs from javascript``
+  
   ``note: maybe parent would be a better name``
 
 trait
