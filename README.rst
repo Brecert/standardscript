@@ -15,10 +15,10 @@ rune
 float : size where size: 32 || 64
   The <size>bit floating point type
 
-f32 : where self impl float<32>
+f32
   The 32bit floating poitn type
 
-f64 : where self impl float<64>
+f64
   The 64bit floating poitn type
 
 fn : return_type : arguments where arguments: has_trait(tuple)
