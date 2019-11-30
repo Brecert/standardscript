@@ -153,7 +153,7 @@ else
   What to do when an if condition does not hold
   
 enum
-  A type that can be any one of several variants. 
+  A type that can be any one of several variants
 
 export
   Export an item to be used by others
@@ -211,7 +211,7 @@ true
   A value of type ``bool`` representing logical **true** 
 
 type
-  Define an alias for an existing type. 
+  Define an alias for an existing type
 
 use
   Import or rename items from other modules to use in the current module
