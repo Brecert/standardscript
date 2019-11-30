@@ -3,7 +3,7 @@ std-script
 
 Primative Types
 ---------------
-array : type : length
+array : type : length where length: has_trait(num) && length > 0
   An array
 
 bool
@@ -40,7 +40,7 @@ uint : size where size: has_trait(num) && size > 0
 
 ``todo: write down u<size> for 8, 16, 32, 64, and 128``
 
-str : length
+str : length where length: has_trait(num) && length > 0
   ``todo: explain how this works with slices``
   
   ``note: slices are not a primitive type right now, maybe they should be``
