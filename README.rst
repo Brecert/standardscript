@@ -80,6 +80,9 @@ fmt
 io
   Traits, helpers, and type definitions for core I/O functionality
 
+iter
+  Composable external iteration
+
 net
   Networking primitives for TCP/UDP communication
 
