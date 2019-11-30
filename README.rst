@@ -3,7 +3,7 @@ std-script
 
 Primative Types
 ---------------
-array:
+array
   An array
 
 bool
