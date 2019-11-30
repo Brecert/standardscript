@@ -168,7 +168,7 @@ if
   Evaluate a block if a condition holds
 
 import
-  Import exports
+  Import exported items from a module
 
 impl
   Implement some functionality for a type
