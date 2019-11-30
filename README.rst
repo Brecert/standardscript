@@ -3,7 +3,7 @@ std-script
 
 Primative Types
 ---------------
-array
+array : type : length
   An array
 
 bool
@@ -21,7 +21,7 @@ f32 : where self impl float<32>
 f64 : where self impl float<64>
   The 64bit floating poitn type
 
-fn : return_type : ...argument_types
+fn : return_type : arguments where arguments: has_trait(tuple)
   A function signature
 
 int : size where size: has_trait(num) && size > 0
@@ -32,18 +32,20 @@ int : size where size: has_trait(num) && size > 0
 ref
   ``todo: explain``
 
-tuple
-  ``todo: explain``
+tuple : ...tuple_types
+  A finite heterogeneous sequence, ``(T, U, ..)``
   
 uint : size where size: has_trait(num) && size > 0
   The <size>bit unsigned integer tye
 
 ``todo: write down u<size> for 8, 16, 32, 64, and 128``
 
-str
-  Unicode string slices
+str : length
+  ``todo: explain how this works with slices``
   
-  ``todo: explain how this works``
+  ``note: slices are not a primitive type right now, maybe they should be``
+
+  Unicode string slices
 
 string
   A UTF-8 growable string
@@ -141,17 +143,17 @@ async
   Used for asyncronous data
 
 break
-  Exit early from a loop
-  
   ``todo: rethink how loops can be conceptulized and if break is needed``
 
+  Exit early from a loop
+  
 const
   Compile-time constants and deterministic functions
 
 continue
-  Skip to the next iteration of a loop
-  
   ``todo: rethink how loops can be conceptulized and if continue is needed``
+
+  Skip to the next iteration of a loop
 
 else
   What to do when an if condition does not hold
@@ -206,11 +208,11 @@ struct
   A type that is composed of other types
 
 super
-  The parent of the current module
-  
   ``note: this differs from javascript``
   
   ``note: maybe parent would be a better name``
+  
+  The parent of the current module
 
 trait
   A common interface for a class of types
